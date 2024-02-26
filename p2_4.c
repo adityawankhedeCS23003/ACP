@@ -26,7 +26,7 @@ void find(float *pt,int n)
 int main()
 {
     float *ptr;
-    ptr=(float*)calloc(10,sizeof(float)); 
+    ptr=(float*)malloc(10*sizeof(float)); 
     printf("Enter the elements of array\n");
     for (int i = 0; i < 10; i++)
     {
