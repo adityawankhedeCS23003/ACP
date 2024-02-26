@@ -1,15 +1,20 @@
 #include<stdio.h>
-#include<stdlib.h>
 
-int add(int *a, int *b)
+void add(int *a, int *b,int *sum)
 {
-    int sum=0;
-    return sum=*a+*b;    
+    *sum=*a+*b;
 }
 
 int main()
 {
-    int a=50,b=100,sum;
-    sum=add(&a,&b);
+    int a,b,sum;
+    printf("Enter the first number: ");
+    scanf("%d", &a);
+
+    printf("Enter the second number: ");
+    scanf("%d", &b);
+    
+    add(&a,&b,&sum);
+    
     printf("Sum of %d and %d are %d",a,b,sum);
 }
