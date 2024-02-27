@@ -9,11 +9,11 @@ void find(float *pt,int n)
     min=*(pt);
     for (i = 0; i < n; i++)
     {
-        if(pt[i]>max)
+        if(*(pt+i)>max)
         {
             max=*(pt+i); 
         }
-        if(pt[i]<min)
+        if(*(ptr+i)<min)
         {
             min=*(pt+i);
         }
