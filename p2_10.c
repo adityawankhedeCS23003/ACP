@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    int *arr;
+    int *ptr;
     int n, i;
     int largest;
 
@@ -10,18 +10,18 @@ int main() {
     scanf("%d", &n);
 
     // Dynamically allocate memory for the array
-    arr = (int *)malloc(n * sizeof(int));
+    ptr = (int *)malloc(n * sizeof(int));
 
     printf("Enter %d elements:\n", size);
     for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", (ptr+i));
     }
 
-    largest = arr[0];
+    largest = *ptr;
 
     for (i = 1; i < n; i++) {
-        if (arr[i] > largest) {
-            largest = arr[i];
+        if (*(ptr+i) > largest) {
+            largest = *(ptr+i);
         }
     }
 
