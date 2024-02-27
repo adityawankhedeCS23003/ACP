@@ -11,12 +11,12 @@ int main()
     printf("Enter the elements of array\n");
     for (int i = 0; i < n; i++)
     {
-       scanf("%d", &ptr[i]);
-       sum+=ptr[i];
+       scanf("%d", (ptr+i));
+       sum+=*(ptr+i);
     }
     printf("Elements of array\n");
     for (i = 0; i < n; i++) {
-        printf("%d ", ptr[i]);
+        printf("%d ", *(ptr+i));
     }
     avg=sum/n;
     printf("\nAverage of elements in the array is %.2f\n",avg);
