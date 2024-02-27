@@ -30,7 +30,7 @@ int main()
     printf("Enter the elements of array\n");
     for (int i = 0; i < 10; i++)
     {
-       scanf("%f", &ptr[i]);
+       scanf("%f", (ptr+i));
     }
     find(ptr,10);
     free(ptr);
