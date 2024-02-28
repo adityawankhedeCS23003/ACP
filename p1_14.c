@@ -11,7 +11,7 @@ int main()
     printf("Original array\n");
 	for(i=0;i<10;i++)
 	{
-		printf("%d\n",arr[i]);
+		printf("%d ",arr[i]);
 	}
     //selection sort
     for ( i = 0; i < 10; i++)
@@ -31,7 +31,7 @@ int main()
     printf("Sorted array\n");
 	for(i=0;i<10;i++)
 	{
-		printf("%d\n",arr[i]);
+		printf("%d ",arr[i]);
 	}
 
     
