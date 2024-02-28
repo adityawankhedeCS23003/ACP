@@ -3,19 +3,19 @@
 int main()
 {
     char temp[30];
-    int n;
+    int n,i,j;
     printf("Enter the number of strings to sort: ");
     scanf("%d",&n); 
     char str[n][20];
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         scanf("%s",str[i]);
     }
 
 //Bubble Sort
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
-        for (int j = 0; j <n-1-i; j++)
+        for (j = 0; j <n-1-i; j++)
         {
             if (strcmp(str[j],str[j+1])>0)    
             {
@@ -28,7 +28,7 @@ int main()
         
     }
     printf("Sorted Strings\n");
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         printf("%s\n",str[i]);
     }
