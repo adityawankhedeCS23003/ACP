@@ -1,13 +1,14 @@
 #include<stdio.h>
+#include<string.h>
 void main()
 {
     char arr[100];
     int i,a=0;
     printf("Enter string: ");
-    scanf("%s",arr);
-    for ( i = 0; arr[i]!='\0'; i++)
+    gets(arr);
+    for ( i = 0; i<strlen(arr); i++)
     {
-        if(arr[i]!=' ' || arr[i]!='\n' || arr[i]!='\t'){
+        if(arr[i]!=' '){
         a++;
         }
     }
