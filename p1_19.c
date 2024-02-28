@@ -2,8 +2,7 @@
 #include <string.h>
 
 
-//strstr()=check for the all occurences of the word in the string and passes null value when no more occurence found.
-
+// strstr() is a predefined function used for string matching
 int countWord(const char *str, const char *word) {
     int count = 0;
     int wordLen = strlen(word);
