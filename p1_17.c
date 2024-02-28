@@ -6,8 +6,6 @@ void array(int *ptr, int size)
     //selection sort
     for (i = 0; i < size; i++)
     {
-        for (i = 0; i < size; i++)
-        {
             for (j = i+1; j < size; j++)
             {
                 if (ptr[i] > ptr[j])
@@ -17,7 +15,6 @@ void array(int *ptr, int size)
                     ptr[j] = temp;
                 }
             }
-        }
     }
 }
 
