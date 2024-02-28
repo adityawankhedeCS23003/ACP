@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i,arr[10],arr1[5],arr2[5];
+    int i,arr[10],arr1[5],arr2[5],j=0;
     
     printf("Enter elements of array\n");
     for ( i = 0; i < 10; i++)
@@ -16,10 +16,15 @@ int main()
         printf("%d ",arr[i]);
     }
     
-    for ( i = 0; i < 10; i++)
-    {
+    for ( i = 0; i < 5; i++)
+    {  
         arr1[i]=arr[i];
-        arr2[i]=arr[i+5];   
+    }
+    while (i<10)
+    {
+        arr2[j]=arr[i];
+        j++;
+        i++;
     }
     
     printf("\n1st array\n");
