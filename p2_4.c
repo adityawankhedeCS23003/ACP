@@ -13,7 +13,7 @@ void find(float *pt,int n)
         {
             max=*(pt+i); 
         }
-        if(*(ptr+i)<min)
+        if(*(pt+i)<min)
         {
             min=*(pt+i);
         }
