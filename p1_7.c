@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n,i,j,sum=0,temp;
+    int n,i,j;
     printf("Enter the number of elements\n");
     scanf("%d",&n);
     int arr[n];
@@ -22,7 +22,7 @@ int main()
         {
             if (arr[i]==arr[j])
             {
-                arr[i]=' ';
+                arr[j]=' ';
             }
             
         }
