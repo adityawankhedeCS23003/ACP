@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int *array(int *a,int *b,int n){
+int *array(int a[],int b[],int n){
     int i;
     for ( i = 0; i < n; i++)
     {
