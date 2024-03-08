@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void array(int *ptr, int size)
+void array(int ptr[], int size)
 {
     int i, j, temp;
     //selection sort
