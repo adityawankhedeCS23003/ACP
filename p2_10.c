@@ -11,8 +11,6 @@ int main() {
 
     // Dynamically allocate memory for the array
     ptr = (int *)malloc(n * sizeof(int));
-
-    printf("Enter %d elements:\n", size);
     for (i = 0; i < n; i++) {
         scanf("%d", (ptr+i));
     }
