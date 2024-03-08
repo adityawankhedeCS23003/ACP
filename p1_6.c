@@ -2,31 +2,26 @@
 
 int main()
 {
-    int n,n1,i,j;
+    int n,i,j;
     printf("Enter the number of elements for 1st array\n");
     scanf("%d",&n);
-    printf("Enter the number of elements for 2nd array\n");
-    scanf("%d",&n1);
-    int arr[n],arr1[n1];
+    int arr[n],arr1[n];
     printf("ENter elements for 1st array\n");
     for ( i = 0; i < n; i++)
     {
         scanf("%d",&arr[i]);
     }
     printf("ENter elements for 2nd array\n");
-    for ( i = 0; i < n1; i++)
+    for ( i = 0; i < n; i++)
     {
         scanf("%d",&arr1[i]);
     }
     printf("Common elements in both arrrays are\n");
     for ( i = 0; i < n; i++)
     {
-        for ( j = 0; j < n1; j++)
-        {
-            if (arr[i]==arr1[j]){
+            if (arr[i]==arr1[i]){
                 printf("%d\n",arr[i]);
             }
-        }
         
     }
     return 0;
