@@ -25,7 +25,7 @@ int main() {
 
     printf("The largest element in the array is: %d\n", largest);
 
-    free(arr);
+    free(ptr);
 
     return 0;
 }
